@@ -15,8 +15,7 @@ angular.module('hello', [ 'ngRoute' ])
     })
 
     .controller('home', function($scope, $http) {
-        // use $http.post() to trigger CSRF
-        $http.get('/resource/').success(function(data) {
+        $http.post('/resource/').success(function(data) {
             $scope.greeting = data
         })
     })
