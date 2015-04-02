@@ -74,6 +74,6 @@ angular.module('hello', [ 'ngRoute' ]
         }
 
     }).controller( 'home',  function($scope, $http) {
-        $http.get('/resource/'
+        $http.get('http://localhost:9000/'
             ).success(function(data) { $scope.greeting = data; } );
     });

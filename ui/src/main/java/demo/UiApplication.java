@@ -26,14 +26,6 @@ public class UiApplication {
     public Principal user(Principal user) {
         return user;
     }
-
-    @RequestMapping("/resource")
-    public Map<String, Object> home() {
-        Map<String, Object> model = new HashMap<>();
-        model.put("id", UUID.randomUUID().toString());
-        model.put("content", "Hello World");
-        return model;
-    }
     
     public static void main(final String[] args) {
         SpringApplication.run(UiApplication.class, args);
